@@ -19,7 +19,7 @@ export default function ServicesPage() {
             alt="Machines de musculation"
           />
           <div className="ServicesPage__service-content">
-            <h3 className="ServicesPage__service-title">Machines</h3>
+            <h4 className="ServicesPage__service-title">Machines</h4>
             <p className="ServicesPage__service-description">
               Profitez d'une gamme complète de machines modernes pour un
               entraînement sécurisé et efficace. Que vous soyez débutant ou
@@ -41,7 +41,7 @@ export default function ServicesPage() {
             alt="Poids libres"
           />
           <div className="ServicesPage__service-content">
-            <h3 className="ServicesPage__service-title">Poids libres</h3>
+            <h4 className="ServicesPage__service-title">Poids libres</h4>
             <p className="ServicesPage__service-description">
               Développez votre force et votre endurance avec nos haltères et
               barres libres. Idéal pour un entraînement fonctionnel, les poids
@@ -60,7 +60,7 @@ export default function ServicesPage() {
             alt="Espace posing"
           />
           <div className="ServicesPage__service-content">
-            <h3 className="ServicesPage__service-title">Espace Posing</h3>
+            <h4 className="ServicesPage__service-title">Espace Posing</h4>
             <p className="ServicesPage__service-description">
               Perfectionnez votre posture et votre présence avec notre espace
               dédié au posing. Que vous soyez un compétiteur en bodybuilding ou
@@ -79,7 +79,7 @@ export default function ServicesPage() {
             alt="Shake Bar"
           />
           <div className="ServicesPage__service-content">
-            <h3 className="ServicesPage__service-title">Shake Bar</h3>
+            <h4 className="ServicesPage__service-title">Shake Bar</h4>
             <p className="ServicesPage__service-description">
               Rechargez vos batteries avec des shakes protéinés et des boissons
               énergétiques adaptées à vos besoins. Que ce soit avant ou après
@@ -100,9 +100,9 @@ export default function ServicesPage() {
             alt="Coaching personnalisé"
           />
           <div className="ServicesPage__service-content">
-            <h3 className="ServicesPage__service-title">
+            <h4 className="ServicesPage__service-title">
               Coaching personnalisé
-            </h3>
+            </h4>
             <p className="ServicesPage__service-description">
               Atteignez vos objectifs plus rapidement avec l'accompagnement d'un
               coach expérimenté. Profitez d'un programme sur mesure, de conseils
@@ -116,10 +116,17 @@ export default function ServicesPage() {
         </section>
       </div>
 
+      {/* ============================================== */
+      /* ============================================== */
+      /* ============================================== */
+      /* ============================================== */
+      /* ============================================== */}
+
       <section className="ServicesPage__pricing">
-        <h2 className="ServicesPage__pricing-title">
+        <h3 className="ServicesPage__pricing-title">
           Choisissez le bon plan pour vos besoins.
-        </h2>
+        </h3>
+
         <div className="ServicesPage__pricing-options">
           <article className="ServicesPage__pricing-option ServicesPage__pricing-option--trial">
             <h4 className="ServicesPage__pricing-option-title">
@@ -127,47 +134,79 @@ export default function ServicesPage() {
             </h4>
             <p className="ServicesPage__pricing-option-price">Gratuit</p>
             <p className="ServicesPage__pricing-option-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              tempora.
+              Profitez d'une première séance gratuite pour tester nos
+              équipements et services.
             </p>
             <div className="ServicesPage__pricing-option-services">
-              <p>Machines</p>
-              <p>Poids libres</p>
-              <p>Shake bar</p>
-              <p>Espace posing</p>
-              <p>Coaching</p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
+                Machines
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
+                Poids libres
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
+                Shake bar
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
+                Espace posing
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
+                Coaching
+              </p>
             </div>
           </article>
+
           <article className="ServicesPage__pricing-option ServicesPage__pricing-option--monthly">
             <h4 className="ServicesPage__pricing-option-title">Mensuel</h4>
             <p className="ServicesPage__pricing-option-price">$39.95 / Mois</p>
             <p className="ServicesPage__pricing-option-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              tempora.
+              Un abonnement flexible pour un accès illimité aux machines, poids
+              libres, et plus encore, chaque mois.
             </p>
             <div className="ServicesPage__pricing-option-services">
-              <p>Machines</p>
-              <p>Poids libres</p>
-              <p>Shake bar</p>
-              <p>Espace posing</p>
-              <p>Coaching</p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
+                Machines
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
+                Poids libres
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
+                Shake bar
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
+                Espace posing
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
+                Coaching
+              </p>
             </div>
           </article>
+
           <article className="ServicesPage__pricing-option ServicesPage__pricing-option--single">
             <h4 className="ServicesPage__pricing-option-title">
               Entrée unique
             </h4>
             <p className="ServicesPage__pricing-option-price">$10</p>
             <p className="ServicesPage__pricing-option-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-              tempora.
+              Accès à une séance unique avec toutes les installations à votre
+              disposition.
             </p>
             <div className="ServicesPage__pricing-option-services">
-              <p>Machines</p>
-              <p>Poids libres</p>
-              <p>Shake bar</p>
-              <p>Espace posing</p>
-              <p>Coaching</p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
+                Machines
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
+                Poids libres
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
+                Shake bar
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
+                Espace posing
+              </p>
+              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
+                Coaching
+              </p>
             </div>
           </article>
         </div>
