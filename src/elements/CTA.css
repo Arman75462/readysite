@@ -1,0 +1,15 @@
+.CTA {
+  display: inline-block;
+  padding: 0.75em 1em;
+
+  background: linear-gradient(45deg, #ff5f5f, #ff0000);
+  border-top-left-radius: 1em;
+  font-weight: bold;
+  color: #f2f2f2;
+  transition: all 0.5s;
+}
+
+.CTA:hover,
+.CTA:focus {
+  transform: scale(1.1);
+}

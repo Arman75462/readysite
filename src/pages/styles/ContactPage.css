@@ -1,0 +1,125 @@
+.ContactPage {
+  margin: 5em 0;
+
+  /* border: 2px solid blue; */
+}
+
+.ContactPage__title {
+  margin-bottom: 2em;
+
+  text-align: center;
+  font-size: clamp(4rem, 9vw, 8rem);
+  text-shadow: 0 0 200px rgba(255, 0, 0, 1), 0 0 150px rgba(255, 0, 0, 0.9),
+    0 0 100px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.7),
+    0 0 25px rgba(255, 0, 0, 0.6);
+}
+
+.ContactPage__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+
+  /* border: 2px solid yellow; */
+}
+
+.ContactPage__image {
+  flex-basis: 50%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center 80%;
+
+  border-radius: 1em;
+}
+
+.ContactPage__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  font-size: clamp(1.05rem, 1.15vw, 1.25rem);
+  /* border: 2px solid green; */
+}
+
+.ContactPage__details,
+.ContactPage__hours-socials {
+  display: flex;
+  flex-direction: column;
+
+  /* border: 2px solid cyan; */
+}
+
+.ContactPage__socials-links {
+  display: flex;
+  gap: 1em;
+}
+
+.ContactPage__socials-links img {
+  width: 2.5em;
+  height: 2.5em;
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.ContactPage__socials-links img:focus,
+.ContactPage__socials-links img:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+.ContactPage__map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+
+  border-radius: 1.5em;
+}
+
+.ContactPage__map-placeholder {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  max-width: 800px;
+
+  border-radius: 1.5em;
+  object-fit: cover;
+  object-position: center 80%;
+  cursor: pointer;
+}
+
+.ContactPage__email {
+  margin: 2em 0;
+
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .ContactPage__image {
+    object-position: center 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ContactPage__content {
+    flex-direction: row;
+  }
+
+  .ContactPage__info {
+    gap: 3em;
+  }
+
+  .ContactPage__details,
+  .ContactPage__hours-socials {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3em;
+  }
+
+  .ContactPage__details p,
+  .ContactPage__hours-socials-container {
+    width: 50%;
+  }
+}

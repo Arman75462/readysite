@@ -1,0 +1,58 @@
+.Hero {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+  gap: 5em;
+
+  font-size: 1.25rem;
+}
+
+.Hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.Hero__image {
+  width: 90%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center 40%;
+  align-self: center;
+
+  border-radius: 1em;
+}
+
+.Hero__title {
+  font-size: clamp(3.5rem, 6vw, 6rem);
+  line-height: 1.1;
+
+  letter-spacing: 0.125rem;
+}
+
+.Hero__text {
+  font-size: clamp(1.1rem, 1.5vw, 2.5rem);
+}
+
+.Hero__cta {
+  align-self: flex-start;
+}
+
+@media (min-width: 1000px) {
+  .Hero {
+    flex-direction: row;
+  }
+
+  .Hero__content {
+    width: 70%;
+    gap: 2.5em;
+  }
+
+  .Hero__title {
+    line-height: 0.95;
+  }
+
+  .Hero {
+    padding-block: 1em;
+  }
+}

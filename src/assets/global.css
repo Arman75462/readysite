@@ -1,0 +1,203 @@
+/*============================
+RESETS=====================
+==============================*/
+
+/* Ensure consistent box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Enable smooth scrolling for same-page links, 
+   effective only for users without preference for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem; /* Offset for fixed headers or navbars */
+  }
+}
+
+/* Enhance text rendering and set a global line-height for improved readability */
+html {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  color-scheme: light dark;
+}
+
+/* Optimize line-height for headings to enhance title readability */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  text-wrap: balance; /* Distribute text evenly in headings */
+}
+
+/* Improve paragraph readability with controlled text wrapping and width */
+p {
+  text-wrap: pretty; /* Enhanced wrapping for paragraphs */
+  max-width: 60ch; /* Max width based on character count for optimal reading */
+}
+
+/* Remove default list styling for cleaner, customizable lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set default styles for media elements for better control and responsiveness */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Normalize typography styles in form elements for consistency */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+/* Reset focus styles */
+button:is(:hover, :focus) {
+  outline-color: black;
+}
+
+/* Normalize link styles for a clean slate */
+a {
+  text-decoration: none;
+}
+
+/* Indicate interactive elements with pointer cursor  */
+input[type="checkbox"],
+input[type="date"]::-webkit-calendar-picker-indicator,
+select,
+button,
+a {
+  cursor: pointer;
+}
+
+/*============================
+GENERAL STYLES================
+==============================*/
+:root {
+  --striking-color: rgb(185, 39, 39);
+  --title-text-color: whitesmoke;
+  --text-color: rgb(196, 196, 196);
+}
+
+body {
+  font-family: "Montserrat", serif;
+  background: linear-gradient(
+    to bottom right,
+    black 0%,
+    black 40%,
+    rgb(116, 23, 23) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    var(--striking-color),
+    #ff5722,
+    #ffeb3b,
+    #ff9800,
+    var(--striking-color),
+    #ffeb3b,
+    #ff9800,
+    #ff5722
+  );
+  background-size: 300%, 300%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: gradient 6s ease-in-out infinite;
+
+  /* To make the text wrap if too big */
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+p,
+strong,
+i {
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-text-color);
+  font-family: "Oswald", serif;
+}
+
+img {
+  box-shadow: 0em 0.125em 0.375em rgba(255, 255, 255, 0.3); /* Subtle white shadow */
+}
+
+/*============================
+ANIMATIONS====================
+==============================*/
+.page-appearance-animation {
+  opacity: 0;
+  transform: translateX(-10%) scale(0.95);
+  animation: pageAppearanceAnimation 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes pageAppearanceAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-10%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0; /* Start invisible */
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1; /* Fully visible */
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

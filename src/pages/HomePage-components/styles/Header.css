@@ -1,0 +1,43 @@
+.Header {
+  /* To ensure it's above everything else */
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.25rem;
+  padding-block: 2em;
+}
+
+.Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  backdrop-filter: blur(25px);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.Header__logo-container-title {
+  font-size: 2rem;
+
+  color: var(--striking-color);
+}
+
+.Header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  opacity: 0.75;
+}
+
+.Header__logo {
+  max-width: 60px;
+}
