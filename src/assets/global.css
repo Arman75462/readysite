@@ -140,9 +140,16 @@ body {
 }
 
 p,
-strong,
-i {
+strong {
   color: var(--text-color);
+}
+
+/* Setting color via var(--text-color) in the global selector (selector right above) prevents specificity from overriding it.  
+   The code inside the selector below ensures the correct text color is applied inside pricing cards. */
+.ServicesPage__pricing-option p,
+.ServicesPage__pricing-option strong,
+.ServicesPage__pricing-option h4 {
+  color: inherit;
 }
 
 h1,

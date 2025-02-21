@@ -1,3 +1,4 @@
 - Add appearance animations for sections
 - Improve meta tags
 - Reduce image size in services page
+- Pourrait changer le scrollbar
