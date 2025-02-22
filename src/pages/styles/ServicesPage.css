@@ -4,6 +4,16 @@
   /* border: 2px solid magenta; */
 }
 
+.ServicesPage__title {
+  margin-bottom: 2em;
+
+  text-align: center;
+  font-size: clamp(4rem, 9vw, 8rem);
+  text-shadow: 0 0 200px rgba(255, 0, 0, 1), 0 0 150px rgba(255, 0, 0, 0.9),
+    0 0 100px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.7),
+    0 0 25px rgba(255, 0, 0, 0.6);
+}
+
 .ServicesPage__subtitle {
   font-size: clamp(3rem, 4vw, 5rem);
   text-align: center;
@@ -18,16 +28,6 @@
 
 .ServicesPage__service-container img {
   box-shadow: 0em 0.125em 0.375em rgba(255, 255, 255, 0.3);
-}
-
-.ServicesPage__title {
-  margin-bottom: 2em;
-
-  text-align: center;
-  font-size: clamp(4rem, 9vw, 8rem);
-  text-shadow: 0 0 200px rgba(255, 0, 0, 1), 0 0 150px rgba(255, 0, 0, 0.9),
-    0 0 100px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.7),
-    0 0 25px rgba(255, 0, 0, 0.6);
 }
 
 .ServicesPage__service {
