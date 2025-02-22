@@ -109,7 +109,7 @@ export default function ServicesPage() {
               en nutrition et d'un suivi adapté à votre progression pour
               maximiser vos performances.
             </p>
-            <CTA className="ServicesPage__service-cta">
+            <CTA className="ServicesPage__service-cta" to="/coaching">
               Un coach rien que pour toi !
             </CTA>
           </div>
@@ -150,9 +150,6 @@ export default function ServicesPage() {
               <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
                 Espace posing
               </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
-                Coaching
-              </p>
             </div>
           </article>
 
@@ -175,9 +172,6 @@ export default function ServicesPage() {
               </p>
               <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
                 Espace posing
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
-                Coaching
               </p>
             </div>
           </article>
@@ -203,9 +197,6 @@ export default function ServicesPage() {
               </p>
               <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
                 Espace posing
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--coaching">
-                Coaching
               </p>
             </div>
           </article>

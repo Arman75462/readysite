@@ -1,4 +1,7 @@
 - Add appearance animations for sections
 - Improve meta tags
-- Reduce image size in services page
+- Reduce image size in services page, and the logo in header + make a different logo for the favicon
 - Pourrait changer le scrollbar
+- Use @font-face for fonts for improve website speed
+
+

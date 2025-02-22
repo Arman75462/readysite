@@ -43,6 +43,18 @@ export default function Navigation({ className, handleHamburgerMenuClick }) {
           </NavLink>
         </li>
         <li>
+          <NavLink
+            className="Navigation__link"
+            onClick={handleHamburgerMenuClick}
+            to="/coaching"
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : null,
+            })}
+          >
+            Coaching
+          </NavLink>
+        </li>
+        <li>
           <CTA onClick={handleHamburgerMenuClick}>CONTACT</CTA>
         </li>
       </ul>

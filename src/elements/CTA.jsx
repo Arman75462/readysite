@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom";
 import "./CTA.css";
 
-export default function CTA({ className = "", children, ...rest }) {
+export default function CTA({
+  className = "",
+  children,
+  to = "/contact",
+  ...rest
+}) {
   return (
     <NavLink
       className={`${className} CTA`}
-      to="/contact"
+      to={to}
       style={({ isActive }) => ({
         textDecoration: isActive ? "underline" : null,
         ...rest.style, // Spreading additional style properties

@@ -1,12 +1,10 @@
 import "./styles/HomePage.css";
 import Hero from "./HomePage-components/Hero.jsx";
 
-function HomePage() {
+export default function HomePage() {
   return (
-    <div className="HomePage page-appearance-animation">
+    <section className="HomePage page-appearance-animation">
       <Hero />
-    </div>
+    </section>
   );
 }
-
-export default HomePage;

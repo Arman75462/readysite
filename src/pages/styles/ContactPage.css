@@ -91,15 +91,19 @@
 }
 
 .ContactPage__email {
-  margin: 2em 0;
+  margin: 5em 0;
 
-  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-size: clamp(1rem, 6.25vw, 6rem);
   text-align: center;
 }
 
 @media (min-width: 700px) {
   .ContactPage__image {
     object-position: center 60%;
+  }
+
+  .ContactPage__email {
+    margin: 3.5em 0;
   }
 }
 
@@ -122,5 +126,9 @@
   .ContactPage__details p,
   .ContactPage__hours-socials-container {
     width: 50%;
+  }
+
+  .ContactPage__email {
+    margin: 2.5em 0;
   }
 }

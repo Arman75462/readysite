@@ -44,7 +44,8 @@ export default function ContactPage() {
           <div className="ContactPage__hours-socials">
             <p className="ContactPage__hours-socials-container">
               <strong>Heures d'ouverture:</strong>
-              <br /> Tous les jours | 5h30 à 21h30
+              <br /> En semaine | 9h00 à 21h00
+              <br /> Fin de semaine | 10h00 à 17h00
             </p>
             <div className="ContactPage__hours-socials-container">
               <strong>Socials:</strong>

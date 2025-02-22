@@ -1,10 +1,10 @@
-.EquipmentsPage {
+.CoachingPage {
   margin: 5em 0;
 
   /* border: 2px solid magenta; */
 }
 
-.EquipmentsPage__title {
+.CoachingPage__title {
   margin-bottom: 2em;
 
   text-align: center;
