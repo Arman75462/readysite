@@ -1,9 +1,9 @@
 import "./styles/ServicesPage.css";
-import coachingImage from "../assets/coachingImage.jpg";
-import shakeBarImage from "../assets/shakeBarImage.jpg";
-import posingImage from "../assets/posingImage.jpg";
-import freeWeightsImage from "../assets/freeWeightsImage.jpg";
-import machinesImage from "../assets/machinesImage.jpg";
+import coachingImage from "../assets/images/coachingImage.webp";
+import shakeBarImage from "../assets/images/shakeBarImage.webp";
+import posingImage from "../assets/images/posingImage.webp";
+import freeWeightsImage from "../assets/images/freeWeightsImage.webp";
+import machinesImage from "../assets/images/machinesImage.webp";
 import CTA from "../elements/CTA.jsx";
 
 export default function ServicesPage() {

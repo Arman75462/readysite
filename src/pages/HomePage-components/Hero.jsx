@@ -1,6 +1,6 @@
 import "./styles/Hero.css";
 import CTA from "../../elements/CTA.jsx";
-import heroImage from "/src/assets/heroImage.jpg";
+import heroImage from "/src/assets/images/heroImage.webp";
 
 function Hero() {
   return (

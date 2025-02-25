@@ -1,10 +1,10 @@
 import "./styles/ContactPage.css";
 import { useState } from "react";
-import contactImage from "/src/assets/contactImage.jpg";
-import instagramLogo from "/src/assets/instagramLogo.webp";
-import facebookLogo from "/src/assets/facebookLogo.png";
-import tiktokLogo from "/src/assets/tiktokLogo.webp";
-import mapImage from "/src/assets/mapImage.webp";
+import contactImage from "/src/assets/images/contactImage.webp";
+import instagramLogo from "/src/assets/images/instagramLogo.webp";
+import facebookLogo from "/src/assets/images/facebookLogo.png";
+import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
+import mapImage from "/src/assets/images/mapImage.webp";
 
 export default function ContactPage() {
   const [isMapLoaded, setIsMapLoaded] = useState(false);

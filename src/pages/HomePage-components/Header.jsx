@@ -2,7 +2,7 @@ import "./styles/Header.css";
 import { useState, useEffect } from "react";
 import Navigation from "./Navigation.jsx";
 import HamburgerMenu from "./HamburgerMenu.jsx";
-import Logo from "../../assets/Logo.webp";
+import Logo from "../../assets/images/Logo.webp";
 
 export default function Header() {
   const largeScreenBreakpoint = 1000;
