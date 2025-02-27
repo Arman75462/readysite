@@ -2,6 +2,20 @@
 RESETS=====================
 ==============================*/
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./fonts/Oswald-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* Ensure consistent box-sizing model */
 *,
 *::before,
@@ -13,15 +27,6 @@ RESETS=====================
 * {
   margin: 0;
   padding: 0;
-}
-
-/* Enable smooth scrolling for same-page links, 
-   effective only for users without preference for reduced motion */
-@media (prefers-reduced-motion: no-preference) {
-  :has(:target) {
-    scroll-behavior: smooth;
-    scroll-padding-top: 3rem; /* Offset for fixed headers or navbars */
-  }
 }
 
 /* Enhance text rendering and set a global line-height for improved readability */
@@ -106,7 +111,7 @@ GENERAL STYLES================
 }
 
 body {
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   background: linear-gradient(
     to bottom right,
     black 0%,
@@ -159,12 +164,14 @@ h4,
 h5,
 h6 {
   color: var(--title-text-color);
-  font-family: "Oswald", serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /*============================
 ANIMATIONS====================
 ==============================*/
+
+/* Animation for your navigation menu on mobile devices */
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
@@ -176,6 +183,7 @@ ANIMATIONS====================
   }
 }
 
+/* Animation for your gradient text color */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

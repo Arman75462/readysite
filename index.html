@@ -26,12 +26,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Preload the LCP image to speed up rendering and improve LCP time -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap"
+      rel="preload"
+      as="image"
+      href="your-image-url.jpg"
+      type="image/jpeg"
+      fetchpriority="high"
     />
 
     <title>Centre MSS</title>
