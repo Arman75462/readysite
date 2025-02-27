@@ -16,6 +16,7 @@
 .Hero__image {
   width: 90%;
   max-height: 400px;
+  height: auto;
   object-fit: cover;
   object-position: center 40%;
   align-self: center;

@@ -4,16 +4,6 @@
   /* border: 2px solid blue; */
 }
 
-.ContactPage__title {
-  margin-bottom: 2em;
-
-  text-align: center;
-  font-size: clamp(4rem, 9vw, 8rem);
-  text-shadow: 0 0 200px rgba(255, 0, 0, 1), 0 0 150px rgba(255, 0, 0, 0.9),
-    0 0 100px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.7),
-    0 0 25px rgba(255, 0, 0, 0.6);
-}
-
 .ContactPage__content {
   display: flex;
   flex-direction: column;

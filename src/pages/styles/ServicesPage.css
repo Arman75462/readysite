@@ -4,65 +4,11 @@
   /* border: 2px solid magenta; */
 }
 
-.ServicesPage__title {
-  margin-bottom: 2em;
-
-  text-align: center;
-  font-size: clamp(4rem, 9vw, 8rem);
-  text-shadow: 0 0 200px rgba(255, 0, 0, 1), 0 0 150px rgba(255, 0, 0, 0.9),
-    0 0 100px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.7),
-    0 0 25px rgba(255, 0, 0, 0.6);
-}
-
-.ServicesPage__subtitle {
-  font-size: clamp(3rem, 4vw, 5rem);
-  text-align: center;
-}
-
 .ServicesPage__service-container {
   display: flex;
   flex-direction: column;
   gap: 10em;
   /* background-color: red; */
-}
-
-.ServicesPage__service {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  justify-content: space-between;
-
-  /*  border: 2px solid blue; */
-}
-
-.ServicesPage__service-content {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: space-between;
-  gap: 1.5em;
-  /* border: 2px solid green; */
-}
-
-.ServicesPage__service-image {
-  flex-basis: 50%;
-  max-height: 350px;
-  object-fit: cover;
-
-  border-radius: 2em;
-  box-shadow: 0em 0.125em 0.375em rgba(255, 255, 255, 0.3);
-}
-
-.ServicesPage__service-title {
-  font-size: clamp(2.5rem, 3vw, 4rem);
-}
-
-.ServicesPage__service-price {
-  font-size: clamp(1rem, 1.1vw, 1.25rem);
-}
-
-.ServicesPage__service-cta {
-  align-self: flex-start;
 }
 
 /*==============================================*/
@@ -95,84 +41,7 @@
   /*  border: 2px solid red; */
 }
 
-.ServicesPage__pricing-option {
-  padding-block: 2em;
-  flex: 1;
-  max-width: 400px;
-
-  border-radius: 1em;
-  color: rgb(30, 30, 30);
-  /* border: 2px solid cyan; */
-}
-
-.ServicesPage__pricing-option--trial {
-  background: linear-gradient(135deg, #9c6320, #c17e3b, #e8a066, #8a5a2b);
-  box-shadow: 0px 0px 1.5em rgba(205, 127, 50, 0.6),
-    inset 0px 0px 3em rgba(205, 127, 50, 0.4);
-}
-
-.ServicesPage__pricing-option--single {
-  background: linear-gradient(135deg, #dcdcdc, #f5f5f5, #b0b0b0, #a0a0a0);
-  box-shadow: 0px 0px 2em rgba(192, 192, 192, 0.6),
-    inset 0px 0px 4em rgba(192, 192, 192, 0.4);
-}
-
-.ServicesPage__pricing-option--monthly {
-  background: linear-gradient(135deg, #d4af37, #ffd700, #ffcc33, #b8860b);
-  box-shadow: 0px 0px 2.5em rgba(255, 215, 0, 0.7),
-    inset 0px 0px 5em rgba(255, 215, 0, 0.5);
-
-  transform: scale(1.05);
-}
-
-.ServicesPage__pricing-option-title {
-  font-size: clamp(1.75rem, 2vw, 2.5rem);
-  /* background-color: chocolate; */
-}
-
-.ServicesPage__pricing-option-price {
-  margin: 0.5em auto 0;
-
-  font-size: clamp(1.15rem, 1.25vw, 1.5rem);
-  /* background-color: blueviolet; */
-}
-
-.ServicesPage__pricing-option-description {
-  margin: 2.5em auto;
-  padding-inline: 1em;
-}
-
-/* .ServicesPage__pricing-option-services {
-  border: 2px solid magenta;
-} */
-
-.ServicesPage__pricing-option-service {
-  margin: 0 auto;
-  padding: 1em;
-  width: 75%;
-
-  border-bottom: 1px solid rgb(30, 30, 30);
-}
-
 @media (min-width: 1000px) {
-  .ServicesPage__service {
-    flex-direction: row;
-    gap: 5em;
-  }
-
-  /* To change the order of images, for even positioned sections */
-  .ServicesPage__service--free-weights img,
-  .ServicesPage__service--shake-bar img {
-    order: 2;
-  }
-
-  /*==============================================*/
-  /*==============================================*/
-  /*==============================================*/
-  /*==============================================*/
-  /*==============================================*/
-  /*==============================================*/
-
   .ServicesPage__pricing {
     margin-top: 20em;
   }

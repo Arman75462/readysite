@@ -4,116 +4,84 @@ import shakeBarImage from "../assets/images/shakeBarImage.webp";
 import posingImage from "../assets/images/posingImage.webp";
 import freeWeightsImage from "../assets/images/freeWeightsImage.webp";
 import machinesImage from "../assets/images/machinesImage.webp";
-import CTA from "../elements/CTA.jsx";
+import Service from "./ServicesPage-components/Service.jsx";
+import PricingOption from "./ServicesPage-components/PricingOption.jsx";
+import PageTitle from "../elements/PageTitle.jsx";
 
 export default function ServicesPage() {
   return (
     <main className="ServicesPage page-appearance-animation">
-      <h2 className="ServicesPage__title">Transforme-toi ici.</h2>
+      <PageTitle title="Transforme-toi ici." />
 
       <div className="ServicesPage__service-container">
-        <section className="ServicesPage__service ServicesPage__service--machines">
-          <img
-            className="ServicesPage__service-image"
-            src={machinesImage}
-            alt="Machines de musculation"
-          />
-          <div className="ServicesPage__service-content">
-            <h4 className="ServicesPage__service-title">Machines</h4>
-            <p className="ServicesPage__service-description">
-              Profitez d'une gamme complète de machines modernes pour un
-              entraînement sécurisé et efficace. Que vous soyez débutant ou
-              athlète confirmé, nos équipements vous permettent de cibler chaque
-              groupe musculaire avec précision, d'améliorer votre force et de
-              maximiser vos performances. Progressez à votre rythme, sans
-              compromis sur la qualité.
-            </p>
-            <CTA className="ServicesPage__service-cta">
-              Prêt à tester nos machines ?
-            </CTA>
-          </div>
-        </section>
+        <Service
+          imageSrc={machinesImage}
+          imageAlt="Machines de musculation"
+          serviceTitle="Machines"
+          buttonText="Prêt à tester nos machines ?"
+          className="Service-machines"
+        >
+          Profitez d&apos;une gamme complète de machines modernes pour un
+          entraînement sécurisé et efficace. Que vous soyez débutant ou athlète
+          confirmé, nos équipements vous permettent de cibler chaque groupe
+          musculaire avec précision, d&apos;améliorer votre force et de
+          maximiser vos performances. Progressez à votre rythme, sans compromis
+          sur la qualité.
+        </Service>
 
-        <section className="ServicesPage__service ServicesPage__service--free-weights">
-          <img
-            className="ServicesPage__service-image"
-            src={freeWeightsImage}
-            alt="Poids libres"
-          />
-          <div className="ServicesPage__service-content">
-            <h4 className="ServicesPage__service-title">Poids libres</h4>
-            <p className="ServicesPage__service-description">
-              Développez votre force et votre endurance avec nos haltères et
-              barres libres. Idéal pour un entraînement fonctionnel, les poids
-              libres vous permettent de travailler votre stabilité, votre
-              coordination et d'exécuter des mouvements naturels sans contrainte
-              de machine.
-            </p>
-            <CTA className="ServicesPage__service-cta">Soulève avec nous !</CTA>
-          </div>
-        </section>
+        <Service
+          imageSrc={freeWeightsImage}
+          imageAlt="Poids libres"
+          serviceTitle="Poids libres"
+          buttonText="Soulève avec nous !"
+          className="Service-free-weights"
+        >
+          Développez votre force et votre endurance avec nos haltères et barres
+          libres. Idéal pour un entraînement fonctionnel, les poids libres vous
+          permettent de travailler votre stabilité, votre coordination et
+          d&apos;exécuter des mouvements naturels sans contrainte de machine.
+        </Service>
 
-        <section className="ServicesPage__service ServicesPage__service--machines--posing">
-          <img
-            className="ServicesPage__service-image"
-            src={posingImage}
-            alt="Espace posing"
-          />
-          <div className="ServicesPage__service-content">
-            <h4 className="ServicesPage__service-title">Espace Posing</h4>
-            <p className="ServicesPage__service-description">
-              Perfectionnez votre posture et votre présence avec notre espace
-              dédié au posing. Que vous soyez un compétiteur en bodybuilding ou
-              que vous souhaitiez simplement améliorer votre contrôle corporel,
-              cet espace est conçu pour affiner vos poses et mettre en valeur
-              vos progrès.
-            </p>
-            <CTA className="ServicesPage__service-cta">Pose comme un pro !</CTA>
-          </div>
-        </section>
+        <Service
+          imageSrc={posingImage}
+          imageAlt="Espace posing"
+          serviceTitle="Espace Posing"
+          buttonText="Pose comme un pro !"
+          className="Service-machines-posing"
+        >
+          Perfectionnez votre posture et votre présence avec notre espace dédié
+          au posing. Que vous soyez un compétiteur en bodybuilding ou que vous
+          souhaitiez simplement améliorer votre contrôle corporel, cet espace
+          est conçu pour affiner vos poses et mettre en valeur vos progrès.
+        </Service>
 
-        <section className="ServicesPage__service ServicesPage__service--shake-bar">
-          <img
-            className="ServicesPage__service-image"
-            src={shakeBarImage}
-            alt="Shake Bar"
-          />
-          <div className="ServicesPage__service-content">
-            <h4 className="ServicesPage__service-title">Shake Bar</h4>
-            <p className="ServicesPage__service-description">
-              Rechargez vos batteries avec des shakes protéinés et des boissons
-              énergétiques adaptées à vos besoins. Que ce soit avant ou après
-              votre entraînement, notre Shake Bar vous propose des options
-              délicieuses pour optimiser votre récupération et soutenir vos
-              objectifs nutritionnels.
-            </p>
-            <CTA className="ServicesPage__service-cta">
-              Un shake après l'entraînement ?
-            </CTA>
-          </div>
-        </section>
+        <Service
+          imageSrc={shakeBarImage}
+          imageAlt="Shake Bar"
+          serviceTitle="Shake Bar"
+          buttonText="Un shake après l'entraînement ?"
+          className="Service-shake-bar"
+        >
+          Rechargez vos batteries avec des shakes protéinés et des boissons
+          énergétiques adaptées à vos besoins. Que ce soit avant ou après votre
+          entraînement, notre Shake Bar vous propose des options délicieuses
+          pour optimiser votre récupération et soutenir vos objectifs
+          nutritionnels.
+        </Service>
 
-        <section className="ServicesPage__service ServicesPage__service--coaching">
-          <img
-            className="ServicesPage__service-image"
-            src={coachingImage}
-            alt="Coaching personnalisé"
-          />
-          <div className="ServicesPage__service-content">
-            <h4 className="ServicesPage__service-title">
-              Coaching personnalisé
-            </h4>
-            <p className="ServicesPage__service-description">
-              Atteignez vos objectifs plus rapidement avec l'accompagnement d'un
-              coach expérimenté. Profitez d'un programme sur mesure, de conseils
-              en nutrition et d'un suivi adapté à votre progression pour
-              maximiser vos performances.
-            </p>
-            <CTA className="ServicesPage__service-cta" to="/coaching">
-              Un coach rien que pour toi !
-            </CTA>
-          </div>
-        </section>
+        <Service
+          imageSrc={coachingImage}
+          imageAlt="Coaching personnalisé"
+          serviceTitle="Coaching personnalisé"
+          buttonText="Un coach rien que pour toi !"
+          className="Service-coaching"
+          to="/coaching"
+        >
+          Atteignez vos objectifs plus rapidement avec l&apos;accompagnement
+          d&apos;un coach expérimenté. Profitez d&apos;un programme sur mesure,
+          de conseils en nutrition et d&apos;un suivi adapté à votre progression
+          pour maximiser vos performances.
+        </Service>
       </div>
 
       {/* ============================================== */
@@ -128,78 +96,32 @@ export default function ServicesPage() {
         </h3>
 
         <div className="ServicesPage__pricing-options">
-          <article className="ServicesPage__pricing-option ServicesPage__pricing-option--trial">
-            <h4 className="ServicesPage__pricing-option-title">
-              Premier essai
-            </h4>
-            <p className="ServicesPage__pricing-option-price">Gratuit</p>
-            <p className="ServicesPage__pricing-option-description">
-              Profitez d'une première séance gratuite pour tester nos
-              équipements et services.
-            </p>
-            <div className="ServicesPage__pricing-option-services">
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
-                Machines
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
-                Poids libres
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
-                Shake bar
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
-                Espace posing
-              </p>
-            </div>
-          </article>
+          <PricingOption
+            title="Premier essai"
+            price="Gratuit"
+            className="PricingOption-trial"
+          >
+            Profitez d&apos;une première séance gratuite pour tester nos
+            équipements et services.
+          </PricingOption>
 
-          <article className="ServicesPage__pricing-option ServicesPage__pricing-option--monthly">
-            <h4 className="ServicesPage__pricing-option-title">Mensuel</h4>
-            <p className="ServicesPage__pricing-option-price">$39.95 / Mois</p>
-            <p className="ServicesPage__pricing-option-description">
-              Un abonnement flexible pour un accès illimité aux machines, poids
-              libres, et plus encore, chaque mois.
-            </p>
-            <div className="ServicesPage__pricing-option-services">
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
-                Machines
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
-                Poids libres
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
-                Shake bar
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
-                Espace posing
-              </p>
-            </div>
-          </article>
+          <PricingOption
+            title="Mensuel"
+            price="$39.95 / Mois"
+            className="PricingOption-monthly"
+          >
+            Un abonnement flexible pour un accès illimité aux machines, poids
+            libres, et plus encore, chaque mois.
+          </PricingOption>
 
-          <article className="ServicesPage__pricing-option ServicesPage__pricing-option--single">
-            <h4 className="ServicesPage__pricing-option-title">
-              Entrée unique
-            </h4>
-            <p className="ServicesPage__pricing-option-price">$10</p>
-            <p className="ServicesPage__pricing-option-description">
-              Accès à une séance unique avec toutes les installations à votre
-              disposition.
-            </p>
-            <div className="ServicesPage__pricing-option-services">
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--machines">
-                Machines
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--free-weights">
-                Poids libres
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--shake-bar">
-                Shake bar
-              </p>
-              <p className="ServicesPage__pricing-option-service ServicesPage__pricing-option-service--posing">
-                Espace posing
-              </p>
-            </div>
-          </article>
+          <PricingOption
+            title="Entrée unique"
+            price="$10"
+            className="PricingOption-single"
+          >
+            Accès à une séance unique avec toutes les installations à votre
+            disposition.
+          </PricingOption>
         </div>
       </section>
     </main>

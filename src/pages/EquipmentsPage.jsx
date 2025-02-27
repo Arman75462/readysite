@@ -1,9 +1,10 @@
 import "./styles/EquipmentsPage.css";
+import PageTitle from "../elements/PageTitle.jsx";
 
 export default function EquipmentsPage() {
   return (
     <section className="EquipmentsPage page-appearance-animation">
-      <h2 className="EquipmentsPage__title">Bientôt disponible</h2>
+      <PageTitle title="Bientôt disponible" />
     </section>
   );
 }

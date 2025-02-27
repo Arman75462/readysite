@@ -146,9 +146,9 @@ strong {
 
 /* Setting color via var(--text-color) in the global selector (selector right above) prevents specificity from overriding it.  
    The code inside the selector below ensures the correct text color is applied inside pricing cards. */
-.ServicesPage__pricing-option p,
-.ServicesPage__pricing-option strong,
-.ServicesPage__pricing-option h4 {
+.PricingOption p,
+.PricingOption strong,
+.PricingOption h4 {
   color: inherit;
 }
 
@@ -165,23 +165,6 @@ h6 {
 /*============================
 ANIMATIONS====================
 ==============================*/
-.page-appearance-animation {
-  opacity: 0;
-  transform: translateX(-10%) scale(0.95);
-  animation: pageAppearanceAnimation 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
-}
-
-@keyframes pageAppearanceAnimation {
-  from {
-    opacity: 0;
-    transform: translateX(-10%) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-  }
-}
-
 @keyframes slideFromLeft {
   from {
     transform: translateX(-100%);
