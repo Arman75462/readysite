@@ -46,7 +46,7 @@ export default function ContactPage() {
               type: "spring",
               stiffness: 130,
             }}
-            viewport={{ once: true, margin: "-300px" }}
+            viewport={{ once: true, margin: "-200px" }}
           >
             Contactez-nous pour discuter de la manière dont nous pouvons vous
             aider à atteindre vos objectifs et à sculpter le corps de vos rêves.
