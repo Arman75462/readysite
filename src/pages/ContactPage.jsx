@@ -32,7 +32,7 @@ export default function ContactPage() {
             stiffness: 110,
             damping: 15,
           }}
-          viewport={{ once: true, margin: "-300px" }}
+          viewport={{ once: true, margin: "-200px" }}
         />
 
         <div className="ContactPage__info">

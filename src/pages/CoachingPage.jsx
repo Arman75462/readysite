@@ -30,7 +30,7 @@ export default function CoachingPage() {
                 type: "spring",
                 stiffness: 100,
               }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-150px" }}
             >
               Coach Martin
             </motion.h3>
@@ -44,7 +44,7 @@ export default function CoachingPage() {
                 type: "spring",
                 stiffness: 100,
               }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: "-150px" }}
             >
               <li>Expert en recomposition corporelle</li>
               <li>Entraîneur professionnel certifier</li>

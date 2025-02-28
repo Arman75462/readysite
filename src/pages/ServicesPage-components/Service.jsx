@@ -18,7 +18,7 @@ export default function Service({
       initial={{ opacity: 0, x: 100 }} // Start off-screen to the right
       whileInView={{ opacity: 1, x: 0 }} // Fade in and slide left to center
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, margin: "-300px" }} // Trigger when 300px into view
+      viewport={{ once: true, margin: "-150px" }} // Trigger when 300px into view
       {...rest}
     >
       <img className="Service__image" src={imageSrc} alt={imageAlt} />
