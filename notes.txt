@@ -1,5 +1,0 @@
-- Improve meta tags. Ask AI tools for help. Maybe watch a video on how to optimize meta tags
-
-- Add a README.md
-
-- Finish the equipments page

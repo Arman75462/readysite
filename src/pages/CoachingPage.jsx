@@ -29,7 +29,7 @@ export default function CoachingPage() {
             <h3 className="CoachingPage__coach-title">Coach Martin</h3>
             <ul className="CoachingPage__coach-description">
               <li>Expert en recomposition corporelle</li>
-              <li>Entraîneur professionnel certifier</li>
+              <li>Entraîneur professionnel certifié</li>
               <li>Croissance musculaire</li>
               <li>Perte de gras</li>
               <li>Remise en forme</li>
