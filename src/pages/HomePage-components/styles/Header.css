@@ -7,7 +7,7 @@
   top: 0;
   justify-content: space-between;
   align-items: center;
-  padding-block: 2.5em;
+  padding-block: 2em;
 }
 
 .Header::before {
@@ -23,8 +23,8 @@
   border-radius: 10px;
 }
 
-.Header__logo-container-title {
-  font-size: 2rem;
+.Header__business-name {
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
   color: var(--striking-color);
 }
 
@@ -33,7 +33,7 @@
   align-items: center;
   gap: 1em;
 
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .Header__logo {

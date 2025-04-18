@@ -13,9 +13,23 @@ export default function Navigation({ className, handleHamburgerMenuClick }) {
             to="/"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : null,
+              opacity: 0.6,
             })}
           >
-            Accueil
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            className="Navigation__link"
+            onClick={handleHamburgerMenuClick}
+            to="/about"
+            style={({ isActive }) => ({
+              textDecoration: isActive ? "underline" : null,
+              opacity: 0.6,
+            })}
+          >
+            About
           </NavLink>
         </li>
         <li>
@@ -25,33 +39,10 @@ export default function Navigation({ className, handleHamburgerMenuClick }) {
             to="/services"
             style={({ isActive }) => ({
               textDecoration: isActive ? "underline" : null,
+              opacity: 0.6,
             })}
           >
             Services
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="Navigation__link"
-            onClick={handleHamburgerMenuClick}
-            to="/équipements"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : null,
-            })}
-          >
-            Équipements
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="Navigation__link"
-            onClick={handleHamburgerMenuClick}
-            to="/coaching"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : null,
-            })}
-          >
-            Coaching
           </NavLink>
         </li>
         <li>

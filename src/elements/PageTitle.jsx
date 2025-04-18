@@ -6,12 +6,13 @@ export default function PageTitle({ title }) {
         textAlign: "center",
         fontSize: "clamp(4rem, 9vw, 8rem)",
         textShadow: `
-            0 0 200px rgba(255, 0, 0, 1),
-            0 0 150px rgba(255, 0, 0, 0.9),
-            0 0 100px rgba(255, 0, 0, 0.8),
-            0 0 50px rgba(255, 0, 0, 0.7),
-            0 0 25px rgba(255, 0, 0, 0.6)
-          `,
+          0 0 200px var(--striking-color),
+          0 0 150px var(--striking-color),
+          0 0 100px var(--striking-color),
+          0 0 50px var(--striking-color),
+          0 0 25px var(--striking-color)
+        `,
+        color: "#e3f2fd",
       }}
     >
       {title}

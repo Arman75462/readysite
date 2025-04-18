@@ -9,16 +9,17 @@ export default function Service({
   children,
   buttonText,
   className,
+  leftOrRightAppearance,
   to = "/contact",
   ...rest
 }) {
   return (
-    <motion.section
+    <motion.div
       className={`Service ${className}`}
-      initial={{ opacity: 0, x: 100 }} // Start off-screen to the right
+      initial={{ opacity: 0, x: Number(leftOrRightAppearance) }} // Start off-screen to the right
       whileInView={{ opacity: 1, x: 0 }} // Fade in and slide left to center
       transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true, margin: "-150px" }} // Trigger when 300px into view
+      viewport={{ once: true, amount: 0.5 }} // Trigger when 300px into view
       {...rest}
     >
       <img className="Service__image" src={imageSrc} alt={imageAlt} />
@@ -29,6 +30,6 @@ export default function Service({
           {buttonText}
         </CTA>
       </div>
-    </motion.section>
+    </motion.div>
   );
 }

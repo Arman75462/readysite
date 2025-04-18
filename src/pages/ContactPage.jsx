@@ -1,28 +1,22 @@
 import "./styles/ContactPage.css";
-import { useState } from "react";
 import { motion } from "framer-motion";
+
 import contactImage from "/src/assets/images/contactImage.webp";
 import instagramLogo from "/src/assets/images/instagramLogo.webp";
 import facebookLogo from "/src/assets/images/facebookLogo.png";
 import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
-import mapImage from "/src/assets/images/mapImage.webp";
+
 import PageTitle from "../elements/PageTitle.jsx";
 
 export default function ContactPage() {
-  const [isMapLoaded, setIsMapLoaded] = useState(false);
-
-  const handleClick = () => {
-    setIsMapLoaded(true);
-  };
-
   return (
     <section className="ContactPage page-appearance-animation">
-      <PageTitle title="Entrons en contact." />
+      <PageTitle title="Contact page title" />
 
       <div className="ContactPage__content">
         <motion.img
           src={contactImage}
-          alt="Personnes discutant et partageant leur expérience sportive"
+          alt="Placeholder contact visual"
           className="ContactPage__image"
           initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
           whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -48,8 +42,8 @@ export default function ContactPage() {
             }}
             viewport={{ once: true, margin: "-200px" }}
           >
-            Contactez-nous pour discuter de la manière dont nous pouvons vous
-            aider à atteindre vos objectifs et à sculpter le corps de vos rêves.
+            Here’s where you can leave your final impression — invite your
+            visitors to reach out, ask a question, or take the next step.
           </motion.p>
 
           <motion.div
@@ -65,13 +59,12 @@ export default function ContactPage() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <p>
-              <strong>Addresse:</strong>
-              <br /> 2512 Boulevard Ste-Sophie, Sainte-Sophie, QC, Canada,
-              Quebec
+              <strong>Address:</strong>
+              <br /> 1234 Placeholder Ave, City, Country
             </p>
             <p>
-              <strong>Téléphone:</strong> <br />
-              450-436-0368
+              <strong>Phone:</strong> <br />
+              (000) 000-0000
             </p>
           </motion.div>
 
@@ -88,22 +81,22 @@ export default function ContactPage() {
             viewport={{ once: true, margin: "-100px" }}
           >
             <p className="ContactPage__hours-socials-container">
-              <strong>Heures d&apos;ouverture:</strong>
-              <br /> En semaine | 9h00 à 21h00
-              <br /> Fin de semaine | 10h00 à 17h00
+              <strong>Business Hours:</strong>
+              <br /> Mon–Fri | 9:00–17:00
+              <br /> Sat–Sun | 10:00–15:00
             </p>
             <div className="ContactPage__hours-socials-container">
               <strong>Socials:</strong>
               <br />
               <div className="ContactPage__socials-links">
-                <a href="https://www.facebook.com/p/Centre-MSS-61564326750350/">
-                  <img src={facebookLogo} alt="Logo Facebook" />
+                <a href="#">
+                  <img src={facebookLogo} alt="Facebook Logo" />
                 </a>
-                <a href="https://www.instagram.com/explore/locations/402173429645015/centre-mss/">
-                  <img src={instagramLogo} alt="Logo Instagram" />
+                <a href="#">
+                  <img src={instagramLogo} alt="Instagram Logo" />
                 </a>
-                <a href="https://www.tiktok.com/@centre_mss">
-                  <img src={tiktokLogo} alt="Logo TikTok" />
+                <a href="#">
+                  <img src={tiktokLogo} alt="TikTok Logo" />
                 </a>
               </div>
             </div>
@@ -123,43 +116,25 @@ export default function ContactPage() {
         }}
         viewport={{ once: true, margin: "-100px" }}
       >
-        muscusportsante@gmail.com
+        example@email.com
       </motion.h3>
 
-      {!isMapLoaded ? (
-        <motion.img
-          src={mapImage}
-          alt="Cliquez pour voir la carte"
-          onClick={handleClick}
-          className="ContactPage__map-placeholder"
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.6,
-            delay: 0.5,
-            type: "spring",
-            stiffness: 100,
-          }}
-          viewport={{ once: true, margin: "-100px" }}
-        />
-      ) : (
-        <motion.iframe
-          className="ContactPage__map"
-          title="Gym Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11121.338198089822!2d-74.06602615!3d45.810674799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf19bbaf6e57d1%3A0xa177ed40e12441fd!2s2512%20Boulevard%20Ste-Sophie%2C%20Sainte-Sophie%2C%20QC%2C%20Canada!5e0!3m2!1sen!2sca!4v1700000000000"
-          allowFullScreen
-          loading="lazy"
-          style={{ border: 0 }}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.6,
-            delay: 0.2,
-            type: "spring",
-            stiffness: 100,
-          }}
-        ></motion.iframe>
-      )}
+      <motion.iframe
+        className="ContactPage__map"
+        title="Business Location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835284453122!2d-122.42067968468136!3d37.7749292797599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e1aa6613%3A0x8e4d563bdc0b2c64!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000"
+        allowFullScreen
+        loading="lazy"
+        style={{ border: 0 }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.6,
+          delay: 0.2,
+          type: "spring",
+          stiffness: 100,
+        }}
+      ></motion.iframe>
     </section>
   );
 }

@@ -33,7 +33,7 @@
 }
 
 .Hero__text {
-  font-size: clamp(1.1rem, 1.5vw, 2.5rem);
+  font-size: clamp(1.1rem, 1.3vw, 2.5rem);
 }
 
 .Hero__cta {
@@ -43,6 +43,7 @@
 @media (min-width: 1000px) {
   .Hero {
     flex-direction: row;
+    margin: 1.5em 0;
   }
 
   .Hero__content {

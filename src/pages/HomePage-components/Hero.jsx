@@ -28,7 +28,7 @@ export default function Hero() {
             stiffness: 100,
           }}
         >
-          Poussez vos limites.
+          Catch Their Eye Here
         </motion.h2>
         <motion.p
           className="Hero__text"
@@ -41,8 +41,8 @@ export default function Hero() {
             stiffness: 100,
           }}
         >
-          Nous vous aidons à forger un corps et un esprit plus forts grâce au
-          fitness.
+          This is your chance to say something memorable — a quick sentence that
+          captures attention and sets the tone for your site.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }} // Pop in with scale
@@ -54,12 +54,15 @@ export default function Hero() {
             stiffness: 120,
           }}
         >
-          <CTA className="Hero__cta">CONTACT</CTA>
+          <CTA className="Hero__cta" to="/about">
+            Get to Know Us
+          </CTA>
         </motion.div>
       </motion.div>
+
       <motion.img
         src={heroImage}
-        alt="Femme athlétique en plein entraînement"
+        alt="Generic hero section image"
         className="Hero__image"
         initial={{ opacity: 0, scale: 0.85, y: 50 }} // Dramatic scale and drop
         animate={{ opacity: 1, scale: 1, y: 0 }}

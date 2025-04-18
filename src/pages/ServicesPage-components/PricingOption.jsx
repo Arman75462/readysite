@@ -14,17 +14,17 @@ export default function PricingOption({ title, price, className, children }) {
         stiffness: 50, // Low stiffness for a heavy feel
         damping: 25, // Controlled, no bounce
       }}
-      viewport={{ once: true, margin: "-150px" }} // Later trigger, 400px into view
+      viewport={{ once: true, amount: 0.4 }} // Later trigger, 400px into view
       style={{ transformStyle: "preserve-3d", perspective: "1000px" }}
     >
       <h4 className="PricingOption__title">{title}</h4>
       <p className="PricingOption__price">{price}</p>
       <p className="PricingOption__description">{children}</p>
       <div className="PricingOption__services">
-        <p className="PricingOption__service">Machines</p>
-        <p className="PricingOption__service">Poids libres</p>
-        <p className="PricingOption__service">Shake bar</p>
-        <p className="PricingOption__service">Espace posing</p>
+        <p className="PricingOption__service">Service 1</p>
+        <p className="PricingOption__service">Service 2</p>
+        <p className="PricingOption__service">Service 3</p>
+        <p className="PricingOption__service">Service 4</p>
       </div>
     </motion.article>
   );
