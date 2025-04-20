@@ -17,7 +17,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: true, amount: 0.6 }}
+          viewport={{ once: true, amount: 0.7 }}
         >
           <img
             className="AboutPage__identity-image"
@@ -91,3 +91,7 @@ export default function AboutPage() {
     </section>
   );
 }
+/* You could add these to your about page:
+  -reviews section, showcasing clients approving of their services
+
+*/

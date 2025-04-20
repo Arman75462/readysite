@@ -57,6 +57,13 @@
   opacity: 1;
 }
 
+.ContactPage__email {
+  margin: 5em 0;
+  font-size: clamp(1rem, 6.25vw, 6rem);
+
+  text-align: center;
+}
+
 .ContactPage__map {
   display: block;
   margin: 0 auto;
@@ -65,26 +72,22 @@
   max-width: 800px;
 
   border-radius: 1.5em;
+  border: 0;
 }
 
-.ContactPage__map-placeholder {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: 400px;
-  max-width: 800px;
+.ContactPage__form-container {
+  margin-top: 10em;
+  padding: 5em 2em;
 
-  border-radius: 1.5em;
-  object-fit: cover;
-  object-position: center 80%;
-  cursor: pointer;
-}
-
-.ContactPage__email {
-  margin: 5em 0;
-
-  font-size: clamp(1rem, 6.25vw, 6rem);
+  border-radius: 1em;
+  background: var(--gradient-container-default);
+  box-shadow: 0 0 2em rgba(100, 181, 246, 0.1);
   text-align: center;
+}
+
+.ContactPage__form-title {
+  font-size: clamp(2rem, 4vw, 4rem);
+  margin-bottom: 1em;
 }
 
 @media (min-width: 700px) {

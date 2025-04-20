@@ -112,24 +112,68 @@ a {
 GENERAL STYLES================
 ==============================*/
 :root {
-  --striking-color: #007aff; /* Clean vivid blue */
-  --title-text-color: #2b2b2b; /* Sharp and bold */
-  --text-color: #171717; /* Real contrast, no washed-out gray */
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(
+  /* ===============
+  =====GENERAL====== 
+  ================== */
+  /* Gradient background of body element */
+  --body-gradient-background: linear-gradient(
     135deg,
     #ffffff 0%,
     #e3f2fd 30%,
     #d0f0f9 60%,
     #c8e6c9 100%
   );
-}
 
-.gradient-text {
-  background: linear-gradient(
+  /* Main color of the website */
+  --striking-color: #007aff;
+
+  /* General text and title colors */
+  --title-text-color: #2b2b2b;
+  --text-color: #171717;
+
+  /* Text and background colors for CTA buttons */
+  --cta-buton-gradient: linear-gradient(45deg, var(--striking-color), #82b1ff);
+  --cta-text-color: #f2f2f2;
+
+  /* Text color of the main title of pages (the one at the very top of the pages_*/
+  --page-main-title-text-color: whitesmoke;
+
+  /* Soft gradient used for container backgrounds across multiple pages */
+  --gradient-container-default: linear-gradient(135deg, #f7faff, #eef5fb);
+
+  /* =====================
+  =======HOME PAGE======== 
+  ======================== */
+  /* Background color of the navigation list on mobile devices */
+  --navigation-list-small-background-color: #edf3fa;
+
+  /* =====================
+  =====SERVICES PAGE====== 
+  ======================== */
+  --premium-pricing-option-gradient: linear-gradient(
+    135deg,
+    #fff9e5,
+    #ffe9b8,
+    #ffd480
+  );
+  --standard-pricing-option-gradient: linear-gradient(
+    135deg,
+    #ede7f6,
+    #d1c4e9,
+    #b39ddb
+  );
+  --trial-pricing-option-gradient: linear-gradient(
+    135deg,
+    #e3f2fd,
+    #bbdefb,
+    #90caf9
+  );
+
+  /* =====================
+  ======CONTACT PAGE====== 
+  ======================== */
+  /* Gradient of gradient-text (right now, only email on contact page has it) */
+  --gradient-text-gradient: linear-gradient(
     to right,
     var(--striking-color),
     var(--striking-color),
@@ -141,6 +185,15 @@ body {
     #4caf50,
     #ffc107
   );
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--body-gradient-background);
+}
+
+.gradient-text {
+  background: var(--gradient-text-gradient);
   background-size: 300%, 300%;
 
   -webkit-background-clip: text;

@@ -12,7 +12,7 @@ export default function PageTitle({ title }) {
           0 0 50px var(--striking-color),
           0 0 25px var(--striking-color)
         `,
-        color: "#e3f2fd",
+        color: "var(--page-main-title-text-color)",
       }}
     >
       {title}

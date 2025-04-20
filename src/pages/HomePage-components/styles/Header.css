@@ -25,7 +25,8 @@
 
 .Header__business-name {
   font-size: clamp(1.5rem, 3vw, 1.8rem);
-  color: var(--striking-color);
+
+  color: var(--title-text-color);
 }
 
 .Header__logo-container {
