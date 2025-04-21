@@ -199,7 +199,7 @@ export default function ContactPage() {
           <input
             type="hidden"
             name="_next"
-            value="https://readysite.netlify.app/contact?success=true"
+            value="https://readysite.netlify.app/contact"
           />
 
           <Button type="submit" variant="contained" size="large">
