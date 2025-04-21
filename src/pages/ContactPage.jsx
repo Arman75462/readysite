@@ -6,13 +6,8 @@ import instagramLogo from "/src/assets/images/instagramLogo.webp";
 import facebookLogo from "/src/assets/images/facebookLogo.png";
 import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
 import PageTitle from "../elements/PageTitle.jsx";
-import { useLocation } from "react-router-dom";
 
 export default function ContactPage() {
-  const location = useLocation();
-  const query = new URLSearchParams(location.search);
-  const success = query.get("success");
-
   return (
     <section className="ContactPage page-appearance-animation">
       <PageTitle title="Contact page title" />
@@ -199,18 +194,12 @@ export default function ContactPage() {
           <input
             type="hidden"
             name="_next"
-            value="https://readysite.netlify.app/contact"
+            value="https://readysite.netlify.app/thank-you"
           />
 
           <Button type="submit" variant="contained" size="large">
             Send Message
           </Button>
-
-          {success && (
-            <p style={{ color: "green", marginTop: "1em" }}>
-              Message sent successfully!
-            </p>
-          )}
         </Box>
       </motion.div>
     </section>
