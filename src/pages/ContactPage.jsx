@@ -130,8 +130,14 @@ export default function ContactPage() {
         className="ContactPage__form-container"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true, amount: 0.3 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          type: "spring",
+          stiffness: 50,
+          damping: 25,
+        }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <h3 className="ContactPage__form-title">
           Got a question? Drop us a message.
