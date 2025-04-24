@@ -1,5 +1,5 @@
 /*============================
-RESETS=====================
+RESETS========================
 ==============================*/
 
 @font-face {
@@ -121,7 +121,7 @@ GENERAL STYLES================
     #ffffff 0%,
     #e3f2fd 30%,
     #d0f0f9 60%,
-    #c8e6c9 100%
+    #dbf5db 100%
   );
 
   /* Main color of the website */
@@ -135,11 +135,15 @@ GENERAL STYLES================
   --cta-buton-gradient: linear-gradient(45deg, var(--striking-color), #82b1ff);
   --cta-text-color: #f2f2f2;
 
+  /* Genral box shadow style for images */
+  --image-box-shadow: 0em 0.125em 0.375em var(--text-color);
+
   /* Text color of the main title of pages (the one at the very top of the pages_*/
   --page-main-title-text-color: whitesmoke;
 
   /* Soft gradient used for container backgrounds across multiple pages */
   --gradient-container-default: linear-gradient(135deg, #f7faff, #eef5fb);
+  --box-shadow-container-default: 0 3em 5em rgba(0, 0, 0, 0.3);
 
   /* =====================
   =======HOME PAGE======== 
@@ -177,13 +181,13 @@ GENERAL STYLES================
     to right,
     var(--striking-color),
     var(--striking-color),
-    #00cfff,
-    #4caf50,
-    #ffc107,
+    #7ddcf5,
+    #cfa7f5,
+    #f58f8f,
     var(--striking-color),
-    #00cfff,
-    #4caf50,
-    #ffc107
+    #7ddcf5,
+    #cfa7f5,
+    #f58f8f
   );
 }
 
@@ -199,7 +203,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  animation: gradient 6s ease-in-out infinite;
+  animation: gradient 10s ease-in-out infinite;
 
   /* To make the text wrap if too big */
   word-break: break-word;

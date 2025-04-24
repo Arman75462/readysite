@@ -145,7 +145,7 @@ export default function ContactPage() {
 
         <Box
           component="form"
-          action="https://formsubmit.co/allolol026@gmail.com"
+          action="https://formsubmit.co/PUT THE CLIENT'S EMAIL HERE"
           method="POST"
           sx={{
             display: "flex",
