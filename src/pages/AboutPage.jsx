@@ -6,6 +6,7 @@ import ourMissionImage from "../assets/images/ourMissionImage.webp";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import testimonials from "../assets/testimonials.js";
+import CTA from "../elements/CTA.jsx";
 
 // Icons in stats section
 import { FiUsers } from "react-icons/fi";
@@ -24,7 +25,9 @@ export default function AboutPage() {
     <section className="AboutPage page-appearance-animation">
       <PageTitle title="Tell your story here." />
 
-      {/* =================IDENTITY SECTION================== */}
+      {/*===============================================
+      ==================IDENTITY SECTION================
+      ================================================*/}
       <section className="AboutPage__identity-container">
         {/* =================WHO WE ARE================== */}
         <motion.section
@@ -104,7 +107,9 @@ export default function AboutPage() {
         </motion.section>
       </section>
 
-      {/* =================STATS SECTION================== */}
+      {/*==================================================
+      ======================STATS SECTION==================
+      =====================================================*/}
       <section className="AboutPage__stats-container">
         <h2 className="AboutPage__stats-title">Numbers don't lie</h2>
 
@@ -147,7 +152,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* =================TESTIMONIALS SECTION================== */}
+      {/*==================================================
+      =================TESTIMONIALS SECTION================
+      =====================================================*/}
       <section className="AboutPage__testimonials-container">
         <h2 className="AboutPage__stats-title">What Our Clients Say</h2>
 
@@ -197,8 +204,34 @@ export default function AboutPage() {
         </motion.div>
       </section>
 
-      {/* =================CTA SECTION================== */}
-      <section className="AboutPage__cta-container"></section>
+      {/*==================================================
+      ======================CTA SECTION====================
+      =====================================================*/}
+      <motion.section
+        className="AboutPage__cta-container"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+          type: "spring",
+          stiffness: 50,
+          damping: 25,
+        }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <h3 className="AboutPage__closing-cta-title">
+          You know who we are — now see what we do.
+        </h3>
+        <p className="AboutPage__closing-cta-text">
+          If you’re still reading, it’s because something here resonates. Don't
+          leave it at curiosity. Explore the services built to turn your ideas
+          into something real — and find the next step that's made for you.
+        </p>
+        <CTA className="AboutPage__closing-cta-button" to="/services">
+          See Our Services
+        </CTA>
+      </motion.section>
     </section>
   );
 }

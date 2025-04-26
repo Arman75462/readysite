@@ -3,26 +3,18 @@
   flex-direction: column;
   margin: 2em 0;
   gap: 5em;
-
   font-size: 1.25rem;
+
+  content-visibility: auto;
 }
 
+/*===============================================
+===============HERO CONTENT SECTION==============
+================================================*/
 .Hero__content {
   display: flex;
   flex-direction: column;
   gap: 2em;
-}
-
-.Hero__image {
-  width: 90%;
-  max-height: 400px;
-  height: auto;
-  object-fit: cover;
-  object-position: center 40%;
-  align-self: center;
-
-  border-radius: 1em;
-  box-shadow: var(--image-box-shadow);
 }
 
 .Hero__title {
@@ -40,12 +32,30 @@
   align-self: flex-start;
 }
 
+/*===============================================
+====================HERO IMAGE===================
+================================================*/
+.Hero__image {
+  width: 90%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center 40%;
+  align-self: center;
+
+  border-radius: 1em;
+  box-shadow: var(--image-box-shadow);
+}
+
 @media (min-width: 1000px) {
   .Hero {
     flex-direction: row;
     margin: 1.5em 0;
+    padding-block: 1em;
   }
 
+  /*===============================================
+  ===============HERO CONTENT SECTION==============
+  ================================================*/
   .Hero__content {
     width: 70%;
     gap: 2.5em;
@@ -55,7 +65,10 @@
     line-height: 0.95;
   }
 
-  .Hero {
-    padding-block: 1em;
+  /*===============================================
+  ====================HERO IMAGE===================
+  ================================================*/
+  .Hero__image {
+    width: 50%;
   }
 }

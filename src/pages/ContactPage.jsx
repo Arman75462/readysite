@@ -12,6 +12,9 @@ export default function ContactPage() {
     <section className="ContactPage page-appearance-animation">
       <PageTitle title="Contact page title" />
 
+      {/*===============================================
+        =================CONTENT SECTION================
+        ================================================*/}
       <div className="ContactPage__content">
         <motion.img
           src={contactImage}
@@ -103,6 +106,9 @@ export default function ContactPage() {
         </div>
       </div>
 
+      {/*===============================================
+      ======================EMAIL TEXT==================
+      ================================================*/}
       <motion.p
         className="ContactPage__email gradient-text"
         initial={{ opacity: 0, x: -80 }}
@@ -118,6 +124,9 @@ export default function ContactPage() {
         example@email.com
       </motion.p>
 
+      {/*===============================================
+      ======================MAP ELEMENT=================
+      ================================================*/}
       <iframe
         className="ContactPage__map"
         title="Business Location"
@@ -126,6 +135,9 @@ export default function ContactPage() {
         loading="lazy"
       ></iframe>
 
+      {/*===============================================
+      ====================FORM SECTION==================
+      ================================================*/}
       <motion.div
         className="ContactPage__form-container"
         initial={{ opacity: 0, y: 100 }}

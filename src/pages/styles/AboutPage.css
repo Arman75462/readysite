@@ -5,9 +5,9 @@
   /* border: 2px solid magenta; */
 }
 
-/* =========================
-IDENTITY SECTION============
-============================ */
+/*================================================
+==================IDENTITY SECTION================
+================================================*/
 .AboutPage__identity-container {
   display: flex;
   flex-direction: column;
@@ -50,9 +50,9 @@ IDENTITY SECTION============
   order: 2;
 }
 
-/* =========================
-STATS SECTION===============
-============================ */
+/*===================================================
+======================STATS SECTION==================
+=====================================================*/
 .AboutPage__stats-container {
   margin-top: 12em;
 
@@ -96,9 +96,9 @@ STATS SECTION===============
   font-size: clamp(1rem, 1.25vw, 1.5rem);
 }
 
-/* =============================
-TESTIMONIALS SECTION============
-================================ */
+/*===================================================
+=================TESTIMONIALS SECTION================
+=====================================================*/
 .AboutPage__testimonials-container {
   margin-top: 14em;
 
@@ -151,14 +151,42 @@ TESTIMONIALS SECTION============
   font-weight: bold;
 }
 
-/* =========================
-CTA SECTION=================
-============================ */
+/*===================================================
+======================CTA SECTION====================
+=====================================================*/
+.AboutPage__cta-container {
+  margin-top: 15em;
+  padding: 5em 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  background: var(--gradient-container-default);
+  box-shadow: var(--box-shadow-container-default);
+  border-radius: 1em;
+  text-align: center;
+}
+
+.AboutPage__closing-cta-title {
+  font-size: clamp(2.5rem, 4vw, 5rem);
+}
+
+.AboutPage__closing-cta-text {
+  font-size: clamp(1rem, 1.25vw, 1.5rem);
+}
+
+.AboutPage__closing-cta-button {
+  font-size: 1.5rem;
+  padding: 0.75em 2em;
+  margin-top: 1.5em;
+}
 
 @media (min-width: 1000px) {
-  /* =========================
-  IDENTITY SECTION============
-  ============================ */
+  /*================================================
+  ==================IDENTITY SECTION================
+  ================================================*/
   .AboutPage__identity-section {
     flex-direction: row;
     gap: 5em;
@@ -168,21 +196,21 @@ CTA SECTION=================
     gap: 8em;
   }
 
-  /* =========================
-  STATS SECTION===============
-  ============================ */
+  /*===================================================
+  ======================STATS SECTION==================
+  =====================================================*/
   .AboutPage__stats-container {
     margin-top: 16em;
   }
 
-  /* =============================
-  TESTIMONIALS SECTION============
-  ================================ */
+  /*===================================================
+  =================TESTIMONIALS SECTION================
+  =====================================================*/
   .AboutPage__testimonials-container {
     margin-top: 16em;
   }
 
-  /* =========================
-  CTA SECTION=================
-  ============================ */
+  /*===================================================
+  ======================CTA SECTION====================
+  ====================================================*/
 }

@@ -31,6 +31,9 @@ export default function ServicesPage() {
     <main className="ServicesPage page-appearance-animation">
       <PageTitle title="Service page title" />
 
+      {/*===============================================
+        =================SERVICES SECTION================
+        ================================================*/}
       <section className="ServicesPage__services-container">
         <Service
           imageSrc={service1Image}
@@ -94,12 +97,9 @@ export default function ServicesPage() {
         </Service>
       </section>
 
-      {/* ============================================== */
-      /* ============================================== */
-      /* ============================================== */
-      /* ============================================== */
-      /* ============================================== */}
-
+      {/*===============================================
+        =================PRICING SECTION================
+        ================================================*/}
       <section className="ServicesPage__pricing">
         <h3 className="ServicesPage__pricing-title">
           Pricing section title goes here.
@@ -135,12 +135,9 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* ============================================== */
-      /* ============================================== */
-      /* ============================================== */
-      /* ============================================== */
-      /* ============================================== */}
-
+      {/*===============================================
+        ================CLOSING CTA SECTION=============
+        ================================================*/}
       <motion.section
         className="ServicesPage__closing-cta"
         initial={{ opacity: 0, y: 100 }}

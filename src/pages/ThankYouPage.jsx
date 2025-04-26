@@ -8,14 +8,21 @@ import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
 export default function ThankYouPage() {
   return (
     <section className="ThankYouPage page-appearance-animation">
+      {/*===============================================
+      ======================IMAGE=======================
+      ================================================*/}
       <img
         src={thankYouImage}
         alt="Woman holding a message bubble containing a notification"
         className="ThankYouPage__image"
       />
 
-      <div className="ThankYouPage__text-container">
+      {/*===============================================
+      ==================CONTENT SECTION=================
+      ================================================*/}
+      <section className="ThankYouPage__text-container">
         <h2 className="ThankYouPage__title">We heard you. Now it begins.</h2>
+
         <p className="ThankYouPage__message">
           Your message was sent succesfully. Expect a follow-up soon — and in
           the meantime, feel free to browse or get inspired.
@@ -49,7 +56,7 @@ export default function ThankYouPage() {
         >
           Back to homepage
         </CTA>
-      </div>
+      </section>
     </section>
   );
 }
