@@ -1,6 +1,6 @@
 import "./styles/Hero.css";
 import CTA from "../../elements/CTA.jsx";
-import heroImage from "/src/assets/images/heroImage.webp";
+import siteContent from "../../assets/siteContent.js";
 
 export default function Hero() {
   return (
@@ -9,15 +9,19 @@ export default function Hero() {
       ===============HERO CONTENT SECTION===============
       ================================================*/}
       <div className="Hero__content">
-        <h2 className="Hero__title">Catch Their Eye Here</h2>
+        <h2 className="Hero__title">
+          {siteContent.homePage.heroSection.title}
+        </h2>
 
         <p className="Hero__text">
-          This is your chance to say something memorable — a quick sentence that
-          captures attention and sets the tone for your site.
+          {siteContent.homePage.heroSection.description}
         </p>
 
-        <CTA className="Hero__cta" to="/about">
-          Get to Know Us
+        <CTA
+          className="Hero__cta"
+          to={siteContent.homePage.heroSection.ctaLink}
+        >
+          {siteContent.homePage.heroSection.ctaLabel}
         </CTA>
       </div>
 
@@ -26,8 +30,8 @@ export default function Hero() {
       ================================================*/}
       <img
         loading="eager"
-        src={heroImage}
-        alt="Generic hero section image"
+        src={siteContent.homePage.heroSection.imageSrc}
+        alt={siteContent.homePage.heroSection.imageAlt}
         className="Hero__image"
         width="1200"
         height="600"

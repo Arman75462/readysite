@@ -46,10 +46,6 @@
   font-size: clamp(2.5rem, 3vw, 4rem);
 }
 
-.AboutPage__identity-section--our-story img {
-  order: 2;
-}
-
 /*===================================================
 ======================STATS SECTION==================
 =====================================================*/
@@ -84,6 +80,8 @@
 .AboutPage__stat-icon {
   font-size: 2.5em;
   margin-bottom: 0.5em;
+
+  color: var(--text-color);
 }
 
 .AboutPage__stat-value {

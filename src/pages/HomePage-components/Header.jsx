@@ -2,7 +2,7 @@ import "./styles/Header.css";
 import { useState, useEffect } from "react";
 import Navigation from "./Navigation.jsx";
 import HamburgerMenu from "./HamburgerMenu.jsx";
-/* import Logo from "../../assets/images/Logo.webp"; */
+import siteContent from "../../assets/siteContent.js";
 
 export default function Header() {
   const largeScreenBreakpoint = 1000;
@@ -31,32 +31,15 @@ export default function Header() {
   return (
     <header className="Header">
       <div className="Header__logo-container">
-        {/*         <img
-          src={Logo}
-          alt="Business logo placeholder"
+        <img
+          src={siteContent.homePage.headerSection.logoSrc}
+          alt={siteContent.homePage.headerSection.logoAlt}
           className="Header__logo"
-        /> */}
+        />
 
-        <svg
-          width="70"
-          height="70"
-          viewBox="0 0 40 40"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="20" cy="20" r="20" fill="#e0e0e0" />
-          <text
-            x="50%"
-            y="50%"
-            dominantBaseline="middle"
-            textAnchor="middle"
-            fill="#777"
-            fontSize="10"
-          >
-            LOGO
-          </text>
-        </svg>
-
-        <h1 className="Header__business-name">Business name</h1>
+        <h1 className="Header__business-name">
+          {siteContent.homePage.headerSection.businessName}
+        </h1>
       </div>
 
       {/* Display the standard header navigation when the screen width is 750px or wider. Otherwise, show the alternate header that occupies half the page. */}

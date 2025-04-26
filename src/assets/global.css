@@ -124,7 +124,7 @@ GENERAL STYLES================
     #dbf5db 100%
   );
 
-  /* Main color of the website */
+  /* Main color of the website*/
   --striking-color: #007aff;
 
   /* General text and title colors */
@@ -132,13 +132,13 @@ GENERAL STYLES================
   --text-color: #171717;
 
   /* Text and background colors for CTA buttons */
-  --cta-buton-gradient: linear-gradient(45deg, var(--striking-color), #82b1ff);
+  --cta-button-gradient: linear-gradient(45deg, var(--striking-color), #82b1ff);
   --cta-text-color: #f2f2f2;
 
   /* General box shadow style for images */
   --image-box-shadow: 0em 0.125em 0.375em var(--text-color);
 
-  /* Text color of the main title of pages (the one at the very top of the pages_*/
+  /* Text color of the main title of pages (the one at the very top of the pages) */
   --page-main-title-text-color: whitesmoke;
 
   /* Soft gradient used for container backgrounds across multiple pages */
@@ -154,6 +154,7 @@ GENERAL STYLES================
   /* =====================
   =====SERVICES PAGE====== 
   ======================== */
+  /* Background colors for the pricing containers */
   --premium-pricing-option-gradient: linear-gradient(
     135deg,
     #fff9e5,
@@ -176,7 +177,7 @@ GENERAL STYLES================
   /* =====================
   ======CONTACT PAGE====== 
   ======================== */
-  /* Gradient of gradient-text (right now, only email on contact page has it) */
+  /* Gradient for random pieces of text (right now, only email on contact page has it) */
   --gradient-text-gradient: linear-gradient(
     to right,
     var(--striking-color),
@@ -214,14 +215,6 @@ p,
 strong {
   color: var(--text-color);
 }
-
-/* Setting color via var(--text-color) in the global selector (selector right above) prevents specificity from overriding it.  
-   The code inside the selector below ensures the correct text color is applied inside pricing cards. */
-/* .PricingOption p,
-.PricingOption strong,
-.PricingOption h4 {
-  color: var(--text-color);
-} */
 
 h1,
 h2,

@@ -4,6 +4,7 @@ import thankYouImage from "../assets/images/thankYouImage.svg";
 import instagramLogo from "/src/assets/images/instagramLogo.webp";
 import facebookLogo from "/src/assets/images/facebookLogo.png";
 import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
+import siteContent from "../assets/siteContent.js";
 
 export default function ThankYouPage() {
   return (
@@ -32,15 +33,13 @@ export default function ThankYouPage() {
           <p>Let's connect!</p>
 
           <div className="ThankYouPage__socials-links">
-            <a href="#">
-              <img src={facebookLogo} alt="Facebook Logo" />
-            </a>
-            <a href="#">
-              <img src={instagramLogo} alt="Instagram Logo" />
-            </a>
-            <a href="#">
-              <img src={tiktokLogo} alt="TikTok Logo" />
-            </a>
+            {siteContent.globalContent.socialsList.map((socialMedia, index) => {
+              return (
+                <a href={socialMedia.link} key={socialMedia.platform}>
+                  <img src={socialMedia.logoSrc} alt={socialMedia.logoAlt} />
+                </a>
+              );
+            })}
           </div>
         </div>
 

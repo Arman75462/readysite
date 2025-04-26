@@ -14,9 +14,39 @@
   /* background-color: red; */
 }
 
-.Service-two img,
-.Service-four img {
-  order: 2;
+.ServicesPage__services-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: space-between;
+
+  /* border: 2px solid blue; */
+}
+
+.ServicesPage__services-card__image {
+  flex-basis: 50%;
+  max-height: 350px;
+  object-fit: cover;
+
+  border-radius: 2em;
+  box-shadow: var(--image-box-shadow);
+}
+
+.ServicesPage__services-card__content {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  gap: 1.5em;
+  /* border: 2px solid green; */
+}
+
+.ServicesPage__services-card__title {
+  font-size: clamp(2.5rem, 3vw, 4rem);
+}
+
+.ServicesPage__services-card__cta {
+  align-self: flex-start;
 }
 
 /*===============================================
@@ -43,7 +73,7 @@
   text-align: center;
 }
 
-.ServicesPage__pricing-options--trial {
+.ServicesPage__pricing-options--free {
   padding-block: 2em;
   flex: 1;
 
@@ -108,8 +138,6 @@
 .ServicesPage__bubble-icon {
   width: 15em;
   height: 15em;
-
-  color: var(--text-color);
 }
 
 .ServicesPage__bubble-pause-icon {
@@ -145,6 +173,10 @@
   /*===============================================
   =================SERVICES SECTION================
   ================================================*/
+  .ServicesPage__services-card {
+    flex-direction: row;
+    gap: 5em;
+  }
 
   /*===============================================
   =================PRICING SECTION=================

@@ -1,24 +1,21 @@
 import "./styles/ContactPage.css";
 import { motion } from "framer-motion";
 import { TextField, Button, Box } from "@mui/material";
-import contactImage from "/src/assets/images/contactImage.webp";
-import instagramLogo from "/src/assets/images/instagramLogo.webp";
-import facebookLogo from "/src/assets/images/facebookLogo.png";
-import tiktokLogo from "/src/assets/images/tiktokLogo.webp";
 import PageTitle from "../elements/PageTitle.jsx";
+import siteContent from "../assets/siteContent.js";
 
 export default function ContactPage() {
   return (
     <section className="ContactPage page-appearance-animation">
-      <PageTitle title="Contact page title" />
+      <PageTitle title={siteContent.contactPage.pageTitle} />
 
       {/*===============================================
         =================CONTENT SECTION================
         ================================================*/}
       <div className="ContactPage__content">
         <motion.img
-          src={contactImage}
-          alt="Placeholder contact visual"
+          src={siteContent.contactPage.introSection.imageSrc}
+          alt={siteContent.contactPage.introSection.imageAlt}
           className="ContactPage__image"
           initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
           whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -44,8 +41,7 @@ export default function ContactPage() {
             }}
             viewport={{ once: true, margin: "-150px" }}
           >
-            Here’s where you can leave your final impression — invite your
-            visitors to reach out, ask a question, or take the next step.
+            {siteContent.contactPage.introSection.text}
           </motion.p>
 
           <motion.div
@@ -62,11 +58,11 @@ export default function ContactPage() {
           >
             <p>
               <strong>Address:</strong>
-              <br /> 1234 Placeholder Ave, City, Country
+              <br /> {siteContent.contactPage.contactDetails.address}
             </p>
             <p>
               <strong>Phone:</strong> <br />
-              (000) 000-0000
+              {siteContent.contactPage.contactDetails.phone}
             </p>
           </motion.div>
 
@@ -84,22 +80,28 @@ export default function ContactPage() {
           >
             <p className="ContactPage__hours-socials-container">
               <strong>Business Hours:</strong>
-              <br /> Mon–Fri | 9:00–17:00
-              <br /> Sat–Sun | 10:00–15:00
+              <br />
+              {siteContent.contactPage.contactDetails.businessHours.weekdays}
+              <br />
+              {siteContent.contactPage.contactDetails.businessHours.weekends}
             </p>
+
             <div className="ContactPage__hours-socials-container">
               <strong>Socials:</strong>
               <br />
               <div className="ContactPage__socials-links">
-                <a href="#">
-                  <img src={facebookLogo} alt="Facebook Logo" />
-                </a>
-                <a href="#">
-                  <img src={instagramLogo} alt="Instagram Logo" />
-                </a>
-                <a href="#">
-                  <img src={tiktokLogo} alt="TikTok Logo" />
-                </a>
+                {siteContent.globalContent.socialsList.map(
+                  (socialMedia, index) => {
+                    return (
+                      <a href={socialMedia.link} key={socialMedia.platform}>
+                        <img
+                          src={socialMedia.logoSrc}
+                          alt={socialMedia.logoAlt}
+                        />
+                      </a>
+                    );
+                  }
+                )}
               </div>
             </div>
           </motion.div>
@@ -121,7 +123,7 @@ export default function ContactPage() {
         }}
         viewport={{ once: true, amount: 0.3 }}
       >
-        example@email.com
+        {siteContent.contactPage.clientEmailAddress}
       </motion.p>
 
       {/*===============================================
@@ -130,7 +132,7 @@ export default function ContactPage() {
       <iframe
         className="ContactPage__map"
         title="Business Location"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835284453122!2d-122.42067968468136!3d37.7749292797599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e1aa6613%3A0x8e4d563bdc0b2c64!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000"
+        src={siteContent.contactPage.mapEmbedUrl}
         allowFullScreen
         loading="lazy"
       ></iframe>
@@ -157,7 +159,7 @@ export default function ContactPage() {
 
         <Box
           component="form"
-          action="https://formsubmit.co/PUT THE CLIENT'S EMAIL HERE"
+          action={`https://formsubmit.co/${siteContent.contactPage.clientEmailAddress}`}
           method="POST"
           sx={{
             display: "flex",
