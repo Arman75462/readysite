@@ -251,18 +251,36 @@ const siteContent = {
         price: "Free",
         description:
           "Use this space to describe a limited version of your service that new visitors can try without committing.",
+        servicesOffered: [
+          { name: "Service 1", isOffered: true },
+          { name: "Service 2", isOffered: true },
+          { name: "Service 3", isOffered: false },
+          { name: "Service 4", isOffered: false },
+        ],
       },
       premiumOption: {
         title: "Premium",
         price: "$$$",
         description:
           "Use this for your full offer — whether that means priority support, extra access, or just more of everything.",
+        servicesOffered: [
+          { name: "Service 1", isOffered: true },
+          { name: "Service 2", isOffered: true },
+          { name: "Service 3", isOffered: true },
+          { name: "Service 4", isOffered: true },
+        ],
       },
       standardOption: {
         title: "Standard",
         price: "$$",
         description:
           "Describe your most commonly selected plan here. This is likely the one that balances access, price, and features.",
+        servicesOffered: [
+          { name: "Service 1", isOffered: true },
+          { name: "Service 2", isOffered: true },
+          { name: "Service 3", isOffered: true },
+          { name: "Service 4", isOffered: false },
+        ],
       },
     },
     closingCtaSection: {

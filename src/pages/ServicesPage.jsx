@@ -75,6 +75,9 @@ export default function ServicesPage() {
           <PricingOption
             title={siteContent.servicesPage.pricingSection.freeOption.title}
             price={siteContent.servicesPage.pricingSection.freeOption.price}
+            servicesArray={
+              siteContent.servicesPage.pricingSection.freeOption.servicesOffered
+            }
             className="ServicesPage__pricing-options--free"
           >
             {siteContent.servicesPage.pricingSection.freeOption.description}
@@ -83,6 +86,10 @@ export default function ServicesPage() {
           <PricingOption
             title={siteContent.servicesPage.pricingSection.premiumOption.title}
             price={siteContent.servicesPage.pricingSection.premiumOption.price}
+            servicesArray={
+              siteContent.servicesPage.pricingSection.premiumOption
+                .servicesOffered
+            }
             className="ServicesPage__pricing-options--premium"
           >
             {siteContent.servicesPage.pricingSection.premiumOption.description}
@@ -91,6 +98,10 @@ export default function ServicesPage() {
           <PricingOption
             title={siteContent.servicesPage.pricingSection.standardOption.title}
             price={siteContent.servicesPage.pricingSection.standardOption.price}
+            servicesArray={
+              siteContent.servicesPage.pricingSection.standardOption
+                .servicesOffered
+            }
             className="ServicesPage__pricing-options--standard"
           >
             {siteContent.servicesPage.pricingSection.standardOption.description}

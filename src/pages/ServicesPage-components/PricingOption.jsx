@@ -1,7 +1,13 @@
 import "./PricingOption.css";
 import { motion } from "framer-motion";
 
-export default function PricingOption({ title, price, className, children }) {
+export default function PricingOption({
+  title,
+  price,
+  className,
+  children,
+  servicesArray,
+}) {
   return (
     <motion.article
       className={`PricingOption ${className}`}
@@ -21,10 +27,15 @@ export default function PricingOption({ title, price, className, children }) {
       <p className="PricingOption__price">{price}</p>
       <p className="PricingOption__description">{children}</p>
       <div className="PricingOption__services">
-        <p className="PricingOption__service">Service 1</p>
-        <p className="PricingOption__service">Service 2</p>
-        <p className="PricingOption__service">Service 3</p>
-        <p className="PricingOption__service">Service 4</p>
+        {servicesArray.map((service, index) => (
+          <p
+            className="PricingOption__service"
+            key={index}
+            style={{ opacity: service.isOffered ? 1 : 0.4 }}
+          >
+            {service.name}
+          </p>
+        ))}
       </div>
     </motion.article>
   );
