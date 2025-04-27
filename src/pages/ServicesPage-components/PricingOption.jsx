@@ -1,4 +1,4 @@
-import "./styles/PricingOption.css";
+import "./PricingOption.css";
 import { motion } from "framer-motion";
 
 export default function PricingOption({ title, price, className, children }) {

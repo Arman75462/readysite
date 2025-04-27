@@ -54,7 +54,9 @@ export default function ServicesPage() {
                 <p className="ServicesPage__services-card__description">
                   {service.serviceDescription}
                 </p>
-                <CTA className="Service__cta">{service.buttonLabel}</CTA>
+                <CTA className="ServicesPage__services-card__cta">
+                  {service.buttonLabel}
+                </CTA>
               </div>
             </motion.div>
           );
